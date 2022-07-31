@@ -1,0 +1,28 @@
+<html>
+<head>
+<h1> true if _ is not found </h1>
+<script>
+
+function RegExpression(name)
+{
+          re = /[^\_]/
+          if(re.test(name))
+          {
+	alert('found')
+          }
+          else
+           {
+	alert('not found')
+           }
+}
+</script>
+</head>
+<body>
+<form name="a" method="post">
+<p>
+fname <input name="fname" type="text" />
+<input name="Run Reg Expression" value="Run Reg Expression" type="button" onclick="RegExpression(fname.value)" />
+</p>
+</form>
+</body>
+</html>

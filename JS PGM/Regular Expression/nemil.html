@@ -1,0 +1,43 @@
+<html>
+<head>
+<h1> validate Email  </h1>
+<script>
+
+function Namevalidation(n)
+{
+          nm = /^[A-Za-z]+$/
+          if(nm.test(n))
+          {
+	alert('Submitted Sucessfully')
+          }
+          else
+           {
+	alert('You have entered an invalid Name!')
+           }
+}
+function RegExpression(name)
+{
+          re = /[\W]/
+          if(re.test(name))
+          {
+	alert('Submitted Sucessfully')
+          }
+          else
+           {
+	alert('You have entered an invalid Email address!')
+           }
+}
+</script>
+</head>
+<body>
+<form name="a" method="post">
+<p>
+First Name : <input name="fname" type="text" onchange="Namevalidation(this.value)"  /> <br><br>
+Middle Name : <input name="mname" type="text"onchange="Namevalidation(this.value)"  /> <br><br>
+Last Name : <input name="lname" type="text" onchange="Namevalidation(this.value)" /> <br><br>
+Email : <input name="Email" type="text" onchange="Namevalidation(this.value)"/> <br><br>
+<input name="submit" value="submit" type="button" onclick="RegExpression(Email.value)"  /> 
+</p>
+</form>
+</body>
+</html>

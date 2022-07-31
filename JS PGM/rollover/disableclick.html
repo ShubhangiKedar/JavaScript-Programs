@@ -1,0 +1,81 @@
+<html> 
+<head>   
+<title>Lockout Right Mouse Button</title>
+<script>   
+   function BreakInDetected(){   
+      alert('Security Violation')      
+   return false     
+ }     
+ function NetscapeBrowser(e)
+{       
+  if (document.layers|| document.getElementById&&!document.all)
+    {
+            if (e.which==2||e.which==3)
+           {       
+               BreakInDetected()          
+               return false       
+          }       
+ }    
+ }
+     function InternetExploreBrowser(){      
+  if (event.button==2)
+{        
+   BreakInDetected()       
+    return false   
+     } 
+   }    
+if (document.layers)
+{
+       document.captureEvents(Event.MOUSEDOWN)
+       document.onmousedown=NetscapeBrowser()
+    }
+    else if (document.all&&!document.getElementById)
+      {
+           document.onmousedown=InternetExploreBrowser()
+      }   document.oncontextmenu=new Function( "BreakInDetected();return false")     
+</script> 
+</head> 
+<body> <h1><b>  <center> CHEFS </center></h1></b>
+<table width="100%" border=0>     
+<tbody>         
+<tr vAlign=top>           
+<td width=50>              
+<a>              
+<img height=200 src="a.jpg" width="200" border="2" '">
+</a>          
+</td>          
+<td>               
+<img height=1 src="" width=10>         
+ </td>          
+<td>             
+<a>                
+<cTypeface:Bold><u><h2>Ms.Pankaj</h2></U></b>             
+</a>             
+</font><font face="arial, helvetica, sans-serif" size=-1><BR><h3>New Baker.  </h3>                    
+</td>         
+</tr>      
+
+<tr vAlign=top>           
+<td width=50>              
+<a>              
+<img height=200 src="b.jpg" width="200" border="2'">
+</a>          
+</td>          
+<td>               
+<img height=1 src="" width=10>         
+ </td>          
+<td>             
+<a>                
+<cTypeface:Bold><u><h2>Sanjeev Kapoor</h2></U></b>             
+</a>             
+</font><font face="arial, helvetica, sans-serif" size=-1><BR><h3>Main Chef.   </h3>                 
+</td>         
+</tr>      
+
+
+
+
+</tbody>   
+</table> 
+</body> 
+</html>

@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+
+var EmailAddress=prompt("enter your client email address");
+var StartPosition = EmailAddress.indexOf('@')+1;
+var NumCharacterToCopy=EmailAddress.length StartPosition;
+var NewSubstring=EmailAddress.substr(StartPosition,NumCharacterToCopy);
+var GuessWebsite='www.'+NewSubstring;
+var website=prompt('enter website',GuessWebsite);
+
+
+</script>
+</body>
+</html>

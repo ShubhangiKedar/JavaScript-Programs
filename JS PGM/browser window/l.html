@@ -1,0 +1,32 @@
+<html>
+<head>  
+<title>Changing Content of Window</title>     
+<script language="Javascript" type="text/javascript">   
+function Window()
+ {          
+     MyWindow = window.open  ('', 'myWin', 'height=150, width=250,left=100,top=100 ')     
+     MyWindow.document.write('<html>')          
+     MyWindow.document.write('<head>')          
+     MyWindow.document.write ('<title> Writing Content<\/title>')         
+     MyWindow.document.write('<\/head>')          
+     MyWindow.document.write('<body>')          
+     MyWindow.document.write ('<FORM action="http://www.jimkeogh.com"   method="post">')         
+     MyWindow.document.write('<P>')          
+     MyWindow.document.write('Customer:<INPUT name="FirstName"   type="text" \/>')          
+     MyWindow.document.write('<BR>')         
+     MyWindow.document.write ('<INPUT name="submit" type="submit" \/>')      
+     MyWindow.document.write('<\/P>')        
+     MyWindow.document.write('<\/FORM>')        
+     MyWindow.document.write('<\/body>')        
+     MyWindow.document.write('<\/html>')     
+     MyWindow.focus()       
+ }           
+</script>
+</head>   
+<body>    
+<FORM action="http://www.jimkeogh.com" method="post">   
+<P>   
+<INPUT name="OpenWindow" value="Open Window"  type="button" onclick="Window()"/>
+</p></form>
+</body>
+</html>

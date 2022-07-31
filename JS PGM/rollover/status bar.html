@@ -1,0 +1,70 @@
+<html>
+<head>
+<title> Status Bar </title>
+<script>
+
+var Clock = null
+var MesgDisplayed = false
+var Count = 0
+var Offset = 0
+var Mesg = new Array('Department of Computer Engineering !')
+
+function Pause()
+{
+           if(MesgDisplayed)
+           {        
+                    clearTimeout(Clock)
+           }
+           MesgDisplayed = false
+}
+
+function Display()
+{
+        if(Offset < Mesg[Count].length)
+        {
+                    if(Mesg[Count].charAt(Offset)==" ")
+                    {
+	       Offset++
+                    }
+          var PMesg = Mesg[Count].substring(0,Offset + 1)
+          window.status = PMesg
+          Offset++
+          Clock = setTimeout("Display()",100)
+          MesgDisplayed = true
+     }
+   else
+    {
+           Offset = 0
+           Count++
+           if(Count == Mesg.length)
+            {
+            	  Count  = 0       
+            }
+        	Clock = setTimeout("Display()",1000)
+       	 MesgDisplayed = true
+            }
+     }
+
+function Start()
+{
+     Pause()
+      Display()
+}
+
+</script>
+</head>
+<body onload = "Start()">
+      <center>
+       <h1>
+	  DEPARTMENT OF COMPUTER ENGINEEERING
+       </h1>
+       </center>
+       <br>
+       <center>
+<img src = "GPP.png">
+</img>
+</center>
+</body>
+</html>
+
+

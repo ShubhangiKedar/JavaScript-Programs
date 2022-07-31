@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+
+           
+function SetEmail()
+{
+    with(document.forms.uu)
+
+{
+       if(fname.value.length>0 && lname.value.length>0)
+{
+Email.readonly = false
+Email.value = fname.value.charAt(0) + lname.value + '@gmail.com'
+Email.readonly = true
+}
+}
+}
+
+</script>
+</head>
+<body>
+
+<form  method="post" name="uu">
+<p>
+fname:<input type="text" name="fname" onchange="SetEmail()" /><br>
+lname:<input type="text" name="lname" onchange="SetEmail()" /><br>
+Email:<input type="text" name="Email" readonly=true /><br>
+<input name="submit" value="submit"  type="submit" /><br>
+<input name="reset" value="reset"  type="reset"/><br>
+</p>
+</form>
+</body>
+</html>

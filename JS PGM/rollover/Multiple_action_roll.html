@@ -1,0 +1,56 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>  
+	<title>Open Window</title>  
+	<script language="Javascript" type="text/javascript">    
+          function OpenNewWindow(book) 
+		  {        
+			if (book== 1)      
+			{       
+				document.cover.src='Capture.png'   
+				 MyWindow=window.open(' ', 'myAdWin', ' titlebar="0" status="0", toolbar="0",location="0", menubar="0", directories="0", resizable="0", height="50",  width="40", left="50",top="50" ')
+MyWindow.document.write('10% Discount for Java Demystiﬁed!')    
+
+
+
+			}       
+			if (book== 2)    
+			{        
+				document.cover.src='Capture1.png'     
+				MyWindow = window.open(' ', 'myAdWin', 'titlebar="0" status="0", toolbar="0",location="0", menubar="0", directories="0", resizable="0", height="50",  width="150", left="500",top="500"')        
+				MyWindow.document.write( '20% Discount for OOP Demystiﬁed!');    
+			}      
+			if (book== 3)    
+			{           
+				document.cover.src='Capture2.png'        
+				MyWindow = window.open(' ', 'myAdWin','titlebar="0" status="0", toolbar="0",location="0", menubar="0", directories="0", resizable="0",height="50", width="150", left="500", top="600"')       
+				MyWindow.document.write('15% Discount for Data Structures Demystiﬁed!');     
+			}    
+		  }     
+	</script> 
+	</head> 
+<body>  
+	 <TABLE width="100%" border="0">   
+	 <TBODY>         
+	 <TR vAlign="top">  <TD width="50">           
+	 <a>                
+		<IMG height="92" src="Capture3.png" width="70" border="0" name="cover">         
+	</a>         
+	</TD>    
+	<TD>               
+		<IMG height="1" src="Capture2.png" width="10">        
+    </TD>          
+	<TD>              
+		<A onmouseover="OpenNewWindow(1)" onmouseout="MyWindow.close()"> 
+		<B><U>Java Demystiﬁ ed </U></B> </A>        
+		<BR>              
+		<A onmouseover="OpenNewWindow(2)" onmouseout="MyWindow.close()">              
+		<B><U>OOP Demystiﬁ ed</U></B> </A>            
+		<BR>           
+		<A onmouseover="OpenNewWindow(3)" onmouseout="MyWindow.close()">      
+		<B><U>Data Structures Demystiﬁ ed</U></B> </A>     
+	</TD>     
+	</TR>     
+	</TBODY>   
+	</TABLE> 
+</body>
+</html>

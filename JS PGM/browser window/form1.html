@@ -1,0 +1,75 @@
+<html>
+<body>
+<script>
+
+function resetoption(element)
+{
+    with(document.forms.contact)
+
+{
+       if(element==1)
+{
+        optionlist[0].text="moped"
+optionlist[0].value=1
+optionlist[1].text="withgear"
+optionlist[1].value=2
+
+}
+       if(element==2)
+{
+        optionlist[0].text="hatchback"
+optionlist[0].value=1
+optionlist[1]="Sedan"
+optionlist[1]=2
+
+}
+
+function edu()
+{
+       var selection="selected"
+with (document.forms.contact)
+{
+if(HS.checked==true)
+{
+ selection+="high school"   
+}
+if(AD.checked==true)
+{
+ selection+="primary school"   
+}
+}
+}
+
+
+
+
+</script>
+</body>
+
+<form>
+
+<p><select name="optionlist" size="4">
+
+<br><option value=1> bus
+<option value=2>railway
+<option value=3> car
+<option value=4> cycle
+
+
+<br>
+<br><br><input  type="radio" name="vehical" checked="true" value=1 onclick="Resetoptionlist(this.value) cars">cars
+<input  type="radio" name="vehical"  value=2 onclick="Resetoptionlist(this.value) cars">motorcycle
+<br>
+<br><input type="checkbox" name="HS" value ="high school">HS
+<input type="checkbox" name="AD" value ="primary school">AD
+<br><br>
+<input name="process" value ="process" type=reset onclick="edu()">
+
+
+
+
+
+
+</form>
+
+</html>

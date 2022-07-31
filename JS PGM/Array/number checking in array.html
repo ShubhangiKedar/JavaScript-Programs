@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> JS </title>
+</head>
+<body>
+<script>
+
+var a = [ ];
+var count = 0;
+
+   for(var i = 0 ; i < 10 ; i++)
+   {
+          a[i] = prompt("Enter elements "+(i + 1));
+   } 
+     for(var i = 0 ; i < 10 ; i++)
+      { 
+               document.write(a[i]);
+               document.write("<br>");      
+      }
+     var s = prompt("Enter element to check where it is in array or not");
+
+     for(var i = 0 ; i < 10 ; i++)
+     {
+         if (s==a[i])
+         {
+                 count ++
+         }
+    }
+       if(count>0)
+       {
+              document.write("<br>Number is present");
+       }
+         else
+          {
+                   document.write("<br>Number is absent");
+           }
+        
+</script>
+</body>
+</html>

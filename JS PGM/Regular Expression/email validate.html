@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+
+function RegExpression()
+{
+
+if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(document.a.email_id.value)) 
+          {
+                   alert("You have entered an invalid email address!")
+          }
+else
+{
+	alert("submitted successfully");
+}
+   }
+
+</script>
+</head>
+<body>
+<form name="a" method="post">
+<p>
+Email Id : <input name="email_id" type="text"  />
+<input name="Submit" value="submit" type="button" onclick="RegExpression()" />
+</p>
+</form>
+</body>
+</html>
+
+
+
+

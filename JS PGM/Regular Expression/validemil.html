@@ -1,0 +1,29 @@
+<html>
+<head>
+<h1> validate Email  </h1>
+<script>
+
+function RegExpression(name)
+{
+          re = /[\W]/
+          if(re.test(name))
+          {
+	alert('Submitted Sucessfully')
+          }
+          else
+           {
+	alert('Invalid Email !!!!')
+           }
+}
+
+</script>
+</head>
+<body>
+<form name="a" method="post">
+<p>
+Email : <input name="Email" type="text"/>
+<input name="submit" value="submit" type="button" onclick="RegExpression(Email.value)"/>
+</p>
+</form>
+</body>
+</html>

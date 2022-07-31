@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+
+function display()
+{
+            alert('value:'+document.forms.order.Reset.value);   
+}
+
+</script>
+</head>
+<body>
+
+<form action="http//www.jimkeogh.com"  method="post" name=order>
+<p>
+first name:<input type="text" name="fname" /><br>
+last name:<input type="text" name="lname" /><br>
+Email:<input type="text" name="email"  /><br>
+<input type="submit" value="submit"  type="submit"/><br>
+<input type="reset" value="reset"  type="reset" onclick="display()"/><br>
+</p>
+</form>
+</body>
+</html>

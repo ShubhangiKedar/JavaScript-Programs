@@ -1,0 +1,28 @@
+<html> 
+<head>   
+<title>Banner Ads</title>   
+<script language="Javascript" type="text/javascript">   
+   Banners = new Array('Capture.png','Capture1.png','Capture2.png')    
+   CurrentBanner = 0
+     function DisplayBanners() 
+    {  
+            if (document.images) 
+          { 
+               CurrentBanner++
+               if (CurrentBanner == Banners.length)
+                {
+                     CurrentBanner = 0
+                } 
+              document.RotateBanner.src= Banners[CurrentBanner]  
+              setTimeout("DisplayBanners()",1000)
+          }
+    }      
+
+</script> 
+</head> 
+<body onload="DisplayBanners()" >   
+<center>      
+<img src="Capture.png" width="400"  height="150" name="RotateBanner" />   
+</center> 
+</body> 
+</html>

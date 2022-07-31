@@ -1,0 +1,37 @@
+<html>
+<head>
+<title> JS </title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+
+var products = new Array()
+products[0] ='soda'
+products[1] ='water'
+products[2] = 'pizza'
+products[3]= 'bad'
+
+document.write("products  in desending oreder<br>");
+for(var i=0;i<products.length;i++)
+{
+      document.write(products[i]+"<br>")
+}
+
+products[0] ='soda'
+products[1] ='water'
+products[2] = 'pizza'
+products[3]= 'bad'
+products.sort()
+
+document.write("<br>products in asending oreder");
+document.write("<br>");
+for(var i=0;i<products.length;i++)
+{     
+      document.write(products[i]+"<br>")
+}
+
+
+</script>
+</body>
+</html>
+

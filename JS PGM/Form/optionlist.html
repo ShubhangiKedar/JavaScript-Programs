@@ -1,0 +1,48 @@
+<html>
+<body>
+<script>
+
+function resetoption(element)
+{
+    with(document.forms.contact)
+
+{
+       if(element==1)
+{
+        optionlist[0].text="moped"
+optionlist[0].value=1
+optionlist[1].text="withgear"
+optionlist[1].value=2
+
+}
+       if(element==2)
+{
+        optionlist[0].text="hatchback"
+optionlist[0].value=1
+optionlist[1]="Sedan"
+optionlist[1]=2
+
+}
+
+
+</script>
+</body>
+
+<form>
+
+<p><select name="optionlist" size="2">
+
+<br><option value=1> bus
+<option value=2>railway<br>
+
+
+<br><input name="process" value ="process" type=reset onclick="edu()">
+
+
+
+
+
+
+</form>
+
+</html>

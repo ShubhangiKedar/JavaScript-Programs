@@ -1,0 +1,58 @@
+<html><body bgcolor="black" text="white">
+
+
+<script>
+
+
+var s1=prompt("enter first string");
+var s2=prompt("enter second string");
+
+/*var newArray=a.split(',')
+var i;
+document.write("<center>strings are: ");
+document.write(a);
+document.write("<br><br>");
+
+for( i=0;i<4;i++)
+{
+document.write(newArray[i]);
+document.write("<br>");
+}
+*/
+
+
+
+document.write("<br><center>strings are : "+s1+'          '+s2);
+
+document.write("<br><br><br><center>******STRINGS ARE EQUAL OR NOT*******");
+
+if(s1==s2)
+{
+      document.write("<br><br><center>strings are equal");
+}
+else
+{
+      document.write("<br><br><center>string are not equal");
+}
+
+//document.write("<center>strings are:  " +s1+'        ' + '    '+'  '+s2 );
+document.write("<br><br><center>*******CASE OF LETTERS********");
+document.write("<br><br><center>Lower case : " +(s1.toLowerCase(s1)));
+document.write("<br><center>Upper case : " +(s1.toUpperCase(s1)));
+
+document.write("<br><br><center>Lower case  : " +(s2.toLowerCase(s2)));
+document.write("<br><center>Upper case  : " +(s2.toUpperCase(s2)));
+
+
+document.write("<br><br><center>*******INDEX VALUE******");
+var IndexValue= s1.indexOf('o');
+document.write("<br><center> Index value is : "+IndexValue);
+if(IndexValue=-1)
+{
+    var character = S1.CharAt(IndexValue)
+    document.write("<br><br><center>"+character);
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>   
+<title>Link Banner Ads</title>   
+<script language="Javascript" type="text/javascript">  
+      Banners = new Array('Capture.png','Capture1.png',              'Capture2.png')     
+BannerLink = new Array(             'myLink1.com','myLink2.com', 'myLink3.com')    
+ CurrentBanner = 0    
+ NumOfBanners = Banners.length 
+    function LinkBanner()
+{        document.location.href =            "http://www." + BannerLink[CurrentBanner]     }   
+  function DisplayBanners() 
+{        
+if (document.images)
+ {           CurrentBanner++           
+if (CurrentBanner == NumOfBanners)
+ {              CurrentBanner = 0           }         
+  document.RotateBanner.src= Banners[CurrentBanner]        
+   setTimeout("DisplayBanners()",1000)    
+     }      }      
+      </script> </head>
+ <body onload="DisplayBanners()" >  
+ <center>   
+   <a href="javascript: LinkBanner()"><img src="Capture.png"           width="400" height="75" name="RotateBanner" />
+</a>   </center> </body> </html>

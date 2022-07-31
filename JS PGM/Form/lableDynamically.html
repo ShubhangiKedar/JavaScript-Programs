@@ -1,0 +1,49 @@
+<html>
+<head>
+<script>
+
+function resetoption(elementvalue)
+{
+    with(document.forms.contact)
+
+{
+       if(elementvalue=="car")
+{
+switchButton.value="bikes";
+optionlist[0].text="classic"
+optionlist[0].value=1
+optionlist[1].text="police cruiser"
+optionlist[1].value=2
+}
+     
+  if(elementvalue=="bikes")
+{
+switchButton.value="car";
+optionlist[0].text="hatchback"
+optionlist[0].value=1
+optionlist[1].text="Sedan"
+optionlist[1].value=2
+}
+}
+}
+
+</script>
+</head>
+<body>
+
+<form method="post" name="contact">
+<p>
+<select name="optionlist" size="2">
+<br>
+
+<option value=1> classic
+<option value=2> police cruiser
+
+</select>
+<br>
+<input name="submit" value ="submit" type="submit" />
+<input name="switchButton" value ="bikes" type="reset" onclick="resetoption(this.value)"  />
+</p>
+</form>
+</body>
+</html>

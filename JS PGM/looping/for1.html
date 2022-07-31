@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> JS </title>
+<style>
+table {
+                          border:1px solid black;
+                          border-collapse:collapse;
+      }
+</style>
+</head>
+<body>
+<script>
+var i,k
+var tab=1
+document.write("<br>");
+   for(i=1;i<11;i++)
+      {
+         document.write("<table>");  
+         document.write("<tr>"); 
+               for(k=2;k<=20;k++)
+	 {       
+               tab=(+tab + +i)
+               document.write("<td>" + tab + "</td>");
+          }
+	
+           tab=i+1
+  	   document.write("</table>");
+	   document.write("</tr>");
+      }
+</script>
+</table>
+</body>
+</html>

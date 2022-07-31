@@ -1,0 +1,28 @@
+<html>
+<head>
+<h1> validate Date  </h1>
+<script>
+
+function RegExpression(name)
+{
+              re=   /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+          if(re.test(name))
+          {
+	alert('Submitted Sucessfully')
+          }
+          else
+           {
+	alert('You have entered an invalid Date !')
+           }
+}
+</script>
+</head>
+<body>
+<form name="a" method="post">
+<p>
+Date : <input name="Date" type="text" />
+<input name="submit" value="submit" type="button" onclick="RegExpression(Date.value)" />
+</p>
+</form>
+</body>
+</html>

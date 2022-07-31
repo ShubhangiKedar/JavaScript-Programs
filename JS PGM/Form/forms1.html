@@ -1,0 +1,117 @@
+<html>
+<head>
+
+<script language="javascript" type="text/javascript">
+
+function e(element)
+{
+   element.style.color="blue";
+   element.style.backgroundColor="silver";
+}
+
+function f()
+{ 
+    alert("welcome");
+}
+
+function ff()
+{  
+with (document.forms.o)
+{
+ if(Fname.value==0)
+  {  
+alert("complete the form");
+ }
+}
+ }
+
+function x()
+{
+    var s="you selected:";
+     with(document.forms.co)
+     {
+           if(hs.checked==true)
+           {  s=s+ " high school"; }          
+           if(ad.checked==true)
+           {   s=s+ " associate degree"; }
+     alert(s);
+} 
+}
+
+function op(element)
+{
+   with(document.forms.contact)
+   {
+      if(element==1)
+      {
+                optionlist[0].text="moped";
+                  optionlist[0].value=1;
+                optionlist[1].text="with gear";
+                  optionlist[1].value=2;
+      }
+    if(element==2)
+    {
+                    optionlist[0].text="hatch back";
+                  optionlist[0].value=1;
+                optionlist[1].text="sedan";
+                  optionlist[1].value=2;
+   }
+}
+}
+
+ </script> </head>
+<body>
+<h2> <center> FORMS </center> </h2>
+
+<h2> For office use only </h2>
+<form method="post" name="contact">
+<p>
+First name: <input type="text" value="bob"  name="Fname" onchange="e(this)" /> <br>
+Last name: <input type="text" value="smith"  name="Lname" onchange="e(this)" /> <br>
+Email: <input type="text" value="bobsmith@gmail.com"  name="Email" onchange="e(this)" /> <br>
+<input name="submit" value="submit" type="submit" onclick="f()" />
+<input name="reset" value="reset" type="reset">
+</p> </form>
+<hr> <br>
+
+
+<h2> Fill your details </h2>
+<form method="post" name="o">
+<p>
+First name: <input type="text"  name="Fname" /> <br>
+Last name: <input type="text" name="Lname" /> <br>
+Email: <input type="text"  name="Email" /> <br>
+<input name="submit" value="submit" type="submit"  onclick="ff()" />
+<input name="reset" value="reset" type="reset">
+</p> </form>
+<hr> <br>
+
+
+<h2> Select your education </h2>
+<form method="post" name="co">
+<p>
+<input type="checkbox" name="hs" value="hs"> High school
+<br>
+<input type="checkbox" name="ad" value="ad"> Associate degree 
+<br>
+<input name="process" value="process" type="reset"  onclick="x()" />
+</p> </form>
+
+<hr> <br>
+
+<h2> Select your Subject </h2>
+<form method="post" name="order">
+<p>
+<select name="optionlist" size="2">
+<option value=1> science
+<option value=2> maths
+</select>
+<br>
+<input type="radio" name="vehicles" checked="true" value=1 onclick="op(this.value)"> Arts
+<input type="radio" name="vehicles" value=2 onclick="op(this.value)"> Commerce
+<br>
+<input name="submit" value="submit" type="submit">
+<input name="reset" value="reset" type="reset">
+</p> </form>
+</body>
+</html>

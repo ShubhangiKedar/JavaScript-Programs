@@ -1,0 +1,28 @@
+<html> 
+<head>  
+ <title>Slideshow</title>   
+<script language="Javascript" type="text/javascript">   
+      Pictures = new Array( "Capture.png","Capture2.png","Capture1.png")  
+    CurrentPicture = 0      
+function RunSlideShow(ForwardBack) 
+{         
+         if (ForwardBack > 0) 
+{
+               CurrentPicture = 2  
+     }           
+else if (ForwardBack < 0) 
+{               CurrentPicture = 0
+        }          
+else
+{
+  CurrentPicture = 1
+}
+  document.PictureDisplay.src=Pictures[CurrentPicture]
+          }    
+  </script> </head> <body> 
+ <p align="center">
+<img src="Capture.png"         name="PictureDisplay" width="400" height="305"/>
+</p>   <center>   <table border="0">      <tr>      
+   <td align="center">            <input type="button" value="Forward"                     onclick="RunSlideShow(1)">        
+    <input type="button" value="Back"                     onclick="RunSlideShow(-1)">        
+ </td>      </tr>   </table>   </center> </body> </html>

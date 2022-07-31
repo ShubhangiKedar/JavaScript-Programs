@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>  JS </title>
+<script>
+
+function OpenNewWindow(Ad)
+{
+        Mywindow = window.open(Ad," myAdwin " , " status = 0,toolbar = 0, location = 0,menubar = 0,directories  = 0 , resizable = 0 , height = 250, width = 250, left = 120 , top = 120" )
+}
+</script>
+</head>
+<body>
+
+<form action = "http://www.yahoo.com" method = "post">
+<p>
+<input name ="productA" value = "product A"  type ="button" onclick = "OpenNewWindow('form2.html')" />
+<input name ="productB" value = "product B"  type ="button" onclick = "OpenNewWindow('open.html')" />
+</p>
+</form>
+</body>
+</html>

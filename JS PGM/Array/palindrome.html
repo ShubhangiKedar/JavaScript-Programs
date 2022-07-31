@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> JS </title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+
+var r;
+var rev=0;
+var n;
+
+n=prompt("enter any number");
+
+{
+     r = (+n % 10);	
+      n = (+n / 10);
+     rev = ((+rev * 10)+ +r);
+}
+//alert(rev);
+if(n==rev)
+   {
+       alert("palindrome");
+   }
+
+else
+   {
+     alert("not a palindrome");
+   }
+
+</script>
+</body>
+</html>

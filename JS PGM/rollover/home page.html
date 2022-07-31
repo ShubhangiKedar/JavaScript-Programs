@@ -1,0 +1,69 @@
+<html> 
+<head>  
+ <title>Slideshow</title>   
+
+<style>
+
+.box
+{
+   width:1505px;
+     height:105px;
+   background:#232f3e;
+}
+
+p
+{
+ font-family:Arial;
+}
+</style>
+
+<script language="Javascript" type="text/javascript">   
+      Pictures = new Array( "Capture.png","Capture2.png","Capture1.png")  
+    CurrentPicture = 0      
+function RunSlideShow(ForwardBack) 
+{         
+         if (ForwardBack > 0) 
+{
+               CurrentPicture = 2  
+     }           
+else if (ForwardBack < 0) 
+{               CurrentPicture = 0
+        }          
+else
+{
+  CurrentPicture = 1
+}
+  document.PictureDisplay.src=Pictures[CurrentPicture]
+          }    
+  </script> </head> 
+<body text="black" vlink="white" alink="white" link="white">
+<div class="box">
+<center>
+<font color="white" face="appleberry" size="80"> Online Food Ordering System </font> </h1>
+</center>
+<p align="right"> 
+<body> 
+
+
+
+
+
+
+
+<a href="homepg.html">Home</a>
+<a href="Gallary.html">Gallary</a>
+<a href="chef.html">Chef Team</a>
+ 
+<p align="center"><br><br><br><br>
+ <p align="center">
+<img src="Capture.png"         name="PictureDisplay" width="400" height="305"/>
+</p>   <center>   <table border="0">      <tr>      
+   <td align="center">            <input type="button" value="Forward"                     onclick="RunSlideShow(1)">        
+    <input type="button" value="Back"                     onclick="RunSlideShow(-1)">        
+ </td>      </tr>   </table>   </center>
+
+
+<br> <br> <br> <br>
+<div class="box"> 
+</div>
+</body> </html>

@@ -1,0 +1,125 @@
+<html xlmns="http://www.w3.org/999/xhtml"">
+<head>
+<center><h1> FORMS </h1></center>
+<script>
+
+function highlight(element)
+{
+         element.style.color="blue"; 
+         element.style.backgroundColor="silver";
+ }
+
+function edu()
+{
+       var selection="selected"
+ with (document.forms.contact)
+{
+if(HS.checked==true)
+{
+ selection+="high school"   
+}
+if(AD.checked==true)
+{
+ selection+="primary school"   
+}
+}
+}
+
+
+function f()
+{
+      alert("welcome");
+}
+
+
+
+function resetoption(element)
+{
+    with(document.forms.contact)
+
+{
+       if(element==1)
+{
+optionlist[0].text="moped"
+optionlist[0].value=1
+optionlist[1].text="withgear"
+optionlist[1].value=2
+
+}
+       if(element==2)
+{
+        optionlist[0].text="hatchback"
+optionlist[0].value=1
+optionlist[1]="Sedan"
+optionlist[1]=2
+
+}
+}
+}
+</script>
+</head>
+<body>
+
+<form method="post" name ="p">
+<p>
+//form 1
+<br>
+first name:<input type="text"  value="Bob" name="fname" onchange="highlight(this)" /><br>
+last name:<input type="text" value="Smith" name="lname" onchange="highlight(this)"/><br>
+Email:<input value="bsmith@123" type="text" name="email"  onchange="highlight(this)"/><br>
+<br>
+<input name="submit" value="submit"  type="submit"  onclick="f()" />
+<input name="reset" value="reset"  type="reset"/><br>
+</p>
+</form>
+<hr>
+
+<form method="post" name ="p1">
+<p>
+//form 2
+<br>
+first name:<input type="bob" name="fname" onchange="highlight(this)" /><br>
+last name:<input type="text" name="lname" onchange="highlight(this)"/></br>
+Email:<input type="text" name="email"  onchange="highlight(this)"/><br>
+<br>
+<input type="submit" value="submit"  type="submit" />
+<input type="reset" value="reset"  type="reset" /><br>
+</p>
+</form>
+<hr>
+
+//form 3
+<br>
+
+<form name ="p2">
+<p>
+<input type="checkbox" name="HS" value ="high school">high school
+<br>
+<input type="checkbox" name="AD" value ="primary school">primary school
+<br>
+<br><input name="process" value ="process" type=reset onclick="edu()">
+<hr>
+</p> </form>
+
+
+//form 4
+<form name ="p3">
+<br>
+<br>
+<p>
+<select name="optionlist" size="4">
+<br>
+<option value=1> maths
+<option value=2>physics
+<option value=3> chemestry
+<option value=4> Computer network
+</br>
+<br><br>
+<input  type="radio" name="vehical" checked="true" value=1 onclick="Resetoptionlist(this.value) cars">first shift
+<input  type="radio" name="vehical"  value=2 onclick="Resetoptionlist(this.value) cars">second shift
+</br>
+<br><input name="process" value ="process" type=reset onclick="resetoption()">
+</p> </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<title> Create a Frame </title>
+<script language="Javascript" type="text/javascript">    
+function ChangeContent() 
+{
+            window.topPage.document.open()            
+            window.topPage.document.writeln('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">')
+            window.topPage.document.writeln('<html xmlns="http://www.w3.org/1999/xhtml">')
+           window.topPage.document.writeln('<head>')
+           window.topPage.document.writeln('<title>Web Page 3</title>')
+           window.topPage.document.writeln('</head>')
+           window.topPage.document.writeln('<body>')
+           window.topPage.document.writeln('<FORM action="http://www.jimkeogh.com" method="post">')
+           window.topPage.document.writeln('<P>')
+           window.topPage.document.writeln('<INPUT name="WebPage3" value="Web Page 3"  type="button" />')
+           window.topPage.document.writeln('</P>')
+           window.topPage.document.writeln('</FORM>')
+           window.topPage.document.writeln('</body>')
+           window.topPage.document.writeln('</html>')
+           window.topPage.document.close()
+ } 
+</script> 
+</head> 
+<frameset rows="50%,50%" onload="ChangeContent()">      
+<frame src="open.html" name="topPage" />      
+<frame src="form2.html" name="bottomPage" /> 
+</frameset> 
+</html>

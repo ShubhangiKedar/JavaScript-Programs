@@ -1,0 +1,28 @@
+<html>
+<head>
+<h1> Validate Phone Number  </h1>
+<script>
+
+function RegExpression(name)
+{
+          re = /^\d{10}$/
+          if(re.test(name))
+          {
+	alert('Submitted Sucessfully');
+          }
+          else
+           {
+	alert('You have entered an invalid Phone Number!');
+           }
+}
+</script>
+</head>
+<body>
+<form name="a" method="post">
+<p>
+Phone Number : <input name="Phone_no" type="text" />
+<input name="submit" value="submit" type="button" onclick="RegExpression(Phone_no.value)" />
+</p>
+</form>
+</body>
+</html>
